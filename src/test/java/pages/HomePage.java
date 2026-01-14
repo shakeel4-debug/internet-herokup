@@ -41,6 +41,9 @@ public class HomePage {
     @FindBy (linkText = "Drag and Drop")
     private WebElement dragAndDrop;
 
+    @FindBy (linkText = "Dropdown")
+    private WebElement dropDown;
+
     public String getPageTitle() {
         return driver.getTitle();
     }
@@ -78,6 +81,10 @@ public class HomePage {
     }
     public void clickOnDrageAndDrop(){
         dragAndDrop.click();
+    }
+
+    public void clickOnDropDown(){
+        dropDown.click();
     }
 
 }
