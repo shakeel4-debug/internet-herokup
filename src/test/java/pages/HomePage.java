@@ -38,6 +38,9 @@ public class HomePage {
     @FindBy(linkText = "Disappearing Elements")
     private WebElement disappearingElements;
 
+    @FindBy (linkText = "Drag and Drop")
+    private WebElement dragAndDrop;
+
     public String getPageTitle() {
         return driver.getTitle();
     }
@@ -72,6 +75,9 @@ public class HomePage {
 
     public void clickOnDisappearingElement(){
         disappearingElements.click();
+    }
+    public void clickOnDrageAndDrop(){
+        dragAndDrop.click();
     }
 
 }
