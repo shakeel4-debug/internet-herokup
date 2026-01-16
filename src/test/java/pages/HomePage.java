@@ -44,6 +44,41 @@ public class HomePage {
     @FindBy (linkText = "Dropdown")
     private WebElement dropDown;
 
+    @FindBy(linkText = "Dynamic Content")
+    private WebElement dynamicContent;
+
+    @FindBy(linkText = "Dynamic Controls")
+    private WebElement dynamicControl;
+
+    @FindBy(linkText = "Dynamic Loading")
+    private WebElement dynamicLoading;
+
+    @FindBy(linkText = "Entry Ad")
+    private WebElement entryAd;
+
+    @FindBy(linkText = "Exit Intent")
+    private WebElement exitIntent;
+
+    public void clickOnDynamicContent(){
+        dynamicContent.click();
+    }
+
+    public void clickOnDynamicControls(){
+        dynamicControl.click();
+    }
+
+    public void clickOndynamicLoading(){
+        dynamicLoading.click();
+    }
+
+    public void clickOnEntryAd(){
+        entryAd.click();
+    }
+
+    public void clickOnExitIntent(){
+        exitIntent.click();
+    }
+
     public String getPageTitle() {
         return driver.getTitle();
     }
